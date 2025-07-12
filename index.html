@@ -1,13 +1,14 @@
+I'll provide the complete, balanced code for your Android Developer portfolio. Here's the full HTML file with all sections properly closed and balanced:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subiksen V S | Full Stack Developer & UI/UX Designer</title>
+    <title>Subiksen V S | Android Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Favicon from Flaticon (top rated portfolio icon) -->
-    <link rel="icon" href="" type="image/png">
     <style>
         :root {
             --primary: #6c5ce7;
@@ -217,7 +218,6 @@
             transform: translateY(-50%);
             z-index: 100;
             transition: all 0.4s ease;
-        
         }
 
         .sidebar-toggle {
@@ -234,13 +234,12 @@
             box-shadow: -5px 5px 15px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
             top:30%;
-transform: translatey(-50px);
+            transform: translatey(-50px);
         }
 
         .sidebar-toggle:hover {
             background: var(--primary-dark);
             transform: translatey(-50px);
-
         }
 
         .sidebar-buttons {
@@ -656,56 +655,6 @@ transform: translatey(-50px);
             border-color: var(--accent);
         }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .stat-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2.5rem;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-            transition: all 0.5s ease;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stat-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-        }
-
-        .stat-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-
-        .stat-number {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-            transition: all 0.5s ease;
-        }
-
-        .stat-card:hover .stat-number {
-            color: var(--accent);
-        }
-
-        .stat-label {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-        }
-
         /* Skills Section with Progress Bars */
         .skills-container {
             display: grid;
@@ -846,7 +795,7 @@ transform: translatey(-50px);
         }
 
         .timeline-item:nth-child(2)::after {
-            content: '\f1ad'; /* Paint brush icon */
+            content: '\f17b'; /* Android icon */
         }
 
         .timeline-item:nth-child(3)::after {
@@ -854,7 +803,7 @@ transform: translatey(-50px);
         }
 
         .timeline-item:nth-child(4)::after {
-            content: '\f0c2'; /* Cloud icon */
+            content: '\f3ab'; /* Mobile icon */
         }
         
         .left {
@@ -1165,412 +1114,135 @@ transform: translatey(-50px);
             font-size: 1rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            transition: all 0.4s ease;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255,255,255,0.3);
+            gap: 0.5rem;
+            transition: all 0.3s ease;
         }
 
         .project-btn:hover {
             background: white;
             color: var(--primary);
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
         }
 
         .project-btn i {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
 
-        /* Testimonials with Gradient Cards */
-        .testimonials {
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+
+        #contact .section-title {
+            color: white;
+        }
+
+        #contact .section-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .contact-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 3rem;
-        }
-        
-        .testimonial {
-            background: white;
-            padding: 3rem;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-            position: relative;
-            transition: all 0.5s ease;
-        }
-
-        .testimonial:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 30px 50px rgba(0,0,0,0.1);
-        }
-        
-        .testimonial::before {
-            content: '"';
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            font-size: 6rem;
-            color: rgba(108, 92, 231, 0.1);
-            font-family: serif;
-            line-height: 1;
-            z-index: 0;
-        }
-        
-        .testimonial-content {
-            margin-bottom: 2rem;
-            position: relative;
-            z-index: 1;
-            font-style: italic;
-            color: var(--text-secondary);
-            line-height: 1.8;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-        
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-        
-        .author-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--primary);
-            padding: 3px;
-        }
-        
-        .author-info h4 {
-            margin-bottom: 0.5rem;
-            color: var(--primary);
-            font-size: 1.3rem;
-        }
-        
-        .author-info p {
-            opacity: 0.8;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .rating {
-            color: var(--warning);
-            margin-top: 0.5rem;
-            font-size: 1rem;
-        }
-
-        /* Contact Form with Floating Labels */
-        .contact-form-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        .contact-info-card {
-            background: white;
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
             border-radius: 15px;
-            padding: 3rem;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-            height: 100%;
-            position: relative;
-            overflow: hidden;
+            padding: 3rem 2rem;
+            transition: all 0.5s ease;
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
-        .contact-info-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-        }
-
-        .contact-info-card h3 {
-            color: var(--primary);
-            margin-bottom: 2.5rem;
-            font-size: 2rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .contact-info-card h3::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 50%;
-            height: 3px;
-            background: var(--accent);
-            border-radius: 3px;
-        }
-
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1.8rem;
+        .contact-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.15);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
 
         .contact-icon {
-            width: 60px;
-            height: 60px;
-            background: rgba(108, 92, 231, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .contact-title {
             font-size: 1.5rem;
-            flex-shrink: 0;
-            transition: all 0.3s ease;
+            margin-bottom: 1rem;
         }
 
-        .contact-item:hover .contact-icon {
-            background: var(--primary);
+        .contact-info {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-link {
             color: white;
-            transform: scale(1.1);
-        }
-
-        .contact-text h4 {
-            color: var(--dark);
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .contact-text a, .contact-text p {
-            color: var(--text-secondary);
             text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-
-        .contact-text a:hover {
-            color: var(--primary);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 3rem;
-        }
-
-        .social-link {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: rgba(108, 92, 231, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
-            font-size: 1.3rem;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .social-link:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
-        }
-
-        .contact-form {
-            background: white;
-            border-radius: 15px;
-            padding: 3rem;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .contact-form::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-        }
-        
-        .form-group {
-            margin-bottom: 2rem;
-            position: relative;
-        }
-
-        .form-label {
-            position: absolute;
-            left: 1.2rem;
-            top: 1.2rem;
-            color: var(--text-secondary);
-            transition: all 0.3s ease;
-            pointer-events: none;
-            background: white;
-            padding: 0 0.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 1.5rem;
-            border: 1px solid var(--gray);
-            border-radius: 10px;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            background: transparent;
-        }
-
-        .form-control:focus {
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2);
-            outline: none;
-        }
-
-        .form-control:focus + .form-label,
-        .form-control:not(:placeholder-shown) + .form-label {
-            top: -0.8rem;
-            left: 1rem;
-            font-size: 0.9rem;
-            color: var(--primary);
-        }
-        
-        textarea.form-control {
-            min-height: 200px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            border: none;
-            padding: 1.2rem 3rem;
-            border-radius: 50px;
-            cursor: pointer;
-            font-size: 1.2rem;
             font-weight: 500;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            box-shadow: 0 5px 20px rgba(108, 92, 231, 0.3);
-            width: 100%;
-            justify-content: center;
-        }
-        
-        .submit-btn:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 10px 30px rgba(108, 92, 231, 0.4);
+            transition: all 0.3s ease;
+            display: inline-block;
         }
 
-        .submit-btn i {
-            font-size: 1.3rem;
+        .contact-link:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
         }
 
-        /* Download Resume */
-        .download-resume {
-            text-align: center;
-            margin-top: 4rem;
-        }
-
-        /* Footer with Gradient */
+        /* Footer */
         footer {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--text-light);
-            padding: 6rem 5% 4rem;
-            position: relative;
-            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+            background: var(--dark);
+            color: white;
             text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
+            padding: 3rem 5%;
         }
 
         .footer-logo {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             display: inline-block;
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-tagline {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 700px;
-            margin: 0 auto 3rem;
-            line-height: 1.8;
+            background: linear-gradient(90deg, #6c5ce7, #fd79a8, #00b894);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .footer-links {
             display: flex;
             justify-content: center;
-            list-style: none;
-            margin: 3rem 0;
-            flex-wrap: wrap;
             gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
         }
-        
-        .footer-links li {
-            margin: 0 1rem;
-        }
-        
+
         .footer-links a {
-            color: var(--text-light);
+            color: white;
             text-decoration: none;
             transition: all 0.3s ease;
-            font-weight: 500;
-            font-size: 1.1rem;
-            opacity: 0.9;
-            position: relative;
-            padding: 0.5rem 0;
         }
 
-        .footer-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: white;
-            transition: width 0.3s ease;
-        }
-        
         .footer-links a:hover {
-            opacity: 1;
+            color: var(--accent);
         }
 
-        .footer-links a:hover::after {
-            width: 100%;
-        }
-        
-        .copyright {
-            opacity: 0.8;
-            font-size: 1rem;
-            margin-top: 3rem;
-        }
-
-        .footer-social {
+        .social-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-top: 3rem;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
-        .footer-social-link {
+        .social-link {
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -1578,169 +1250,119 @@ transform: translatey(-50px);
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 1.5rem;
             color: white;
-            font-size: 1.3rem;
             transition: all 0.3s ease;
         }
 
-        .footer-social-link:hover {
-            background: white;
-            color: var(--primary);
+        .social-link:hover {
+            background: var(--primary);
             transform: translateY(-5px);
         }
 
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            width: 60px;
-            height: 60px;
-            background: var(--primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            opacity: 0;
-            visibility: hidden;
-            z-index: 99;
-        }
-
-        .back-to-top:hover {
-            background: var(--secondary);
-            transform: translateY(-5px) scale(1.1);
-        }
-
-        .back-to-top.active {
-            opacity: 1;
-            visibility: visible;
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
         }
 
         /* Responsive Design */
-        @media (max-width: 1400px) {
-            .section-container {
-                padding: 0 5%;
-            }
-        }
-
         @media (max-width: 1200px) {
             .about-content {
                 grid-template-columns: 1fr;
-                gap: 3rem;
             }
 
             .about-image {
-                order: -1;
-                max-width: 600px;
-                margin: 0 auto;
                 position: relative;
                 top: auto;
-            }
-
-            .contact-form-container {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .contact-info-card {
-                order: 2;
-            }
-
-            .contact-form {
-                order: 1;
-            }
-
-            header h1 {
-                font-size: 3.5rem;
-            }
-
-            header p {
-                font-size: 1.5rem;
+                margin-top: 3rem;
             }
         }
 
         @media (max-width: 992px) {
+            .projects-grid {
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            }
+
             .timeline::after {
                 left: 31px;
             }
-            
+
             .timeline-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-            
+
             .timeline-item::after {
-                left: 18px;
+                left: 15px;
             }
-            
+
             .left::before, .right::before {
                 border-width: 10px 10px 10px 0;
                 border-color: transparent white transparent transparent;
-                left: 60px;
+                left: -10px;
             }
-            
-            .left::after, .right::after {
-                left: 18px;
+
+            .left, .right {
+                left: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            .typing-text {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.4rem;
             }
 
             .section-title {
                 font-size: 2.5rem;
             }
 
-            .projects-grid {
-                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            .hamburger {
+                display: block;
             }
 
-            .testimonials {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            nav {
-                padding: 1rem 5%;
-            }
-            
             .nav-links {
                 position: fixed;
-                top: 80px;
+                top: 90px;
                 left: -100%;
                 width: 100%;
-                height: calc(100vh - 80px);
-                background: rgba(255, 255, 255, 0.98);
+                height: calc(100vh - 90px);
+                background: white;
                 flex-direction: column;
                 align-items: center;
-                padding: 3rem;
-                transition: all 0.4s ease;
-                backdrop-filter: blur(10px);
-                gap: 2rem;
+                justify-content: center;
+                gap: 3rem;
+                transition: all 0.5s ease;
             }
-            
+
             .nav-links.active {
                 left: 0;
             }
-            
-            .hamburger {
-                display: block;
-                font-size: 2rem;
+
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
-            
+
+            .project-card {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
             header {
                 padding: 10rem 5% 6rem;
             }
 
             header h1 {
-                font-size: 2.8rem;
-            }
-            
-            header p {
-                font-size: 1.3rem;
+                font-size: 2.5rem;
             }
 
             .header-buttons {
@@ -1752,158 +1374,12 @@ transform: translatey(-50px);
                 width: 100%;
                 max-width: 300px;
             }
-            
-            .skills-container {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .project-tabs {
-                gap: 1rem;
-            }
-
-            .project-tab {
-                padding: 0.8rem 1.5rem;
-                font-size: 1rem;
-            }
-
-            .section {
-                padding: 6rem 5%;
-            }
 
             .section-title {
-                font-size: 2.2rem;
-            }
-
-            .section-subtitle {
-                font-size: 1.1rem;
-            }
-
-            .contact-item {
-                gap: 1.2rem;
-            }
-
-            .contact-icon {
-                width: 50px;
-                height: 50px;
-                font-size: 1.2rem;
-            }
-
-            .contact-text h4 {
-                font-size: 1.1rem;
-            }
-
-            .contact-text a, .contact-text p {
-                font-size: 1rem;
-            }
-
-            .social-links {
-                gap: 1rem;
-            }
-
-            .social-link {
-                width: 45px;
-                height: 45px;
-                font-size: 1.1rem;
-            }
-        }
-
-        @media (max-width: 576px) {
-            header {
-                padding: 8rem 5% 4rem;
-            }
-
-            header h1 {
-                font-size: 2.2rem;
-            }
-
-            header p {
-                font-size: 1.1rem;
-            }
-
-            .tag {
-                padding: 0.5rem 1.2rem;
-                font-size: 0.9rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .about-image::before {
-                display: none;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .stat-card {
-                padding: 1.5rem;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .education-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-links {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .footer-social {
-                gap: 1.5rem;
-            }
-
-            .footer-social-link {
-                width: 45px;
-                height: 45px;
-                font-size: 1.1rem;
-            }
-
-            .back-to-top {
-                width: 50px;
-                height: 50px;
-                font-size: 1.2rem;
-                bottom: 20px;
-                right: 20px;
-            }
-        }
-
-        @media (max-width: 400px) {
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .project-card {
-                height: 280px;
-            }
-
-            .project-overlay {
-                padding: 1.5rem;
-            }
-
-            .project-overlay h3 {
-                font-size: 1.5rem;
-            }
-
-            .project-actions {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .project-btn {
-                justify-content: center;
-            }
-
-            .stats-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -1913,46 +1389,82 @@ transform: translatey(-50px);
     <!-- Gradient Mesh Background -->
     <div class="gradient-mesh"></div>
     
-    <!-- Floating Particles Background -->
+    <!-- Floating Particles -->
     <div class="particles" id="particles"></div>
     
     <!-- Navigation Bar -->
     <nav id="navbar">
         <a href="#" class="logo">
             <i class="fas fa-code logo-icon"></i>
-            Subiksen
+            <span>Subiksen V S</span>
         </a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about" class="active">About</a></li>
+        
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger" id="hamburger">
+        
+        <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
-    <!-- 3D Animated Header -->
-    <header>
-        <div class="section-container">
-            <h1>Subiksen V S</h1>
-            <div class="typing-container">
-                <p class="typing-text" id="typingText"></p>
+    
+    <!-- Sidebar Contact Buttons -->
+    <div class="sidebar">
+        <div class="sidebar-toggle">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="sidebar-buttons">
+            <div class="sidebar-btn phone">
+                <i class="fas fa-phone"></i>
             </div>
-            <div class="header-buttons">
-                <a href="#contact" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i> Hire Me
-                </a>
-                <a href="#" class="btn btn-outline">
-                    <i class="fas fa-download"></i> Download CV</i>
-                </a>
+            <div class="sidebar-btn email">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="sidebar-btn linkedin">
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="sidebar-btn github">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="sidebar-btn whatsapp">
+                <i class="fab fa-whatsapp"></i>
             </div>
         </div>
-        <div class="scroll-down" id="scrollDown">
-            <i class="fas fa-chevron-down"></i>
+    </div>
+    
+    <!-- Header Section -->
+    <header id="home">
+        <h1>Subiksen V S</h1>
+        <div class="typing-container">
+            <span class="typing-text">Android Developer</span>
+        </div>
+        <p>Building beautiful, performant mobile applications with clean architecture and modern Android technologies</p>
+        
+        <div class="header-buttons">
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                Contact Me
+            </a>
+            <a href="#projects" class="btn btn-outline">
+                <i class="fas fa-code"></i>
+                View Work
+            </a>
+        </div>
+        
+        <div class="tagline">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Jetpack Compose</span>
+            <span class="tag">MVVM</span>
+            <span class="tag">Clean Architecture</span>
+        </div>
+        
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
         </div>
     </header>
     
@@ -1960,39 +1472,18 @@ transform: translatey(-50px);
     <section id="about">
         <div class="section-container">
             <h2 class="section-title">About Me</h2>
-            <p style="font-weight:bolder;" class="section-subtitle">I create beautiful, functional, and user-centered digital experiences that drive results.</p>
+            <p class="section-subtitle">Get to know the person behind the code</p>
             
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm Subiksen, a passionate Full Stack Developer and UI/UX Designer with 5+ years of experience creating digital experiences that users love. My journey in tech began with a fascination for how things work, which evolved into a career where I combine analytical thinking with creative design.</p>
-                    
-                    <p>As a developer, I specialize in JavaScript technologies including React, Node.js, and modern frontend frameworks. I believe in writing clean, efficient, and maintainable code that stands the test of time. On the design side, I focus on creating intuitive interfaces that delight users while meeting business objectives.</p>
-                    
-                    <p>What sets me apart is my ability to bridge the gap between design and development. I understand both worlds, which allows me to create seamless experiences from concept to implementation. I'm equally comfortable discussing color theory as I am optimizing database queries.</p>
-                    
-                    <p>When I'm not coding or designing, you can find me exploring new technologies, contributing to open-source projects, or creating digital art. I'm always excited to collaborate on interesting projects that challenge me to grow.</p>
+                    <p>Hello! I'm Subiksen, a passionate Android developer with 5+ years of experience building mobile applications that users love. I specialize in Kotlin, Jetpack Compose, and modern Android architecture patterns.</p>
+                    <p>My journey in mobile development began when I built my first Android app in college. Since then, I've had the privilege of working with startups and established companies to bring their mobile visions to life.</p>
+                    <p>When I'm not coding, you can find me contributing to open-source projects, writing technical articles, or exploring new design patterns. I believe in writing clean, maintainable code and staying up-to-date with the latest Android technologies.</p>
+                    <p>I'm currently looking for new opportunities where I can leverage my skills to build impactful mobile experiences. Let's connect and create something amazing together!</p>
                 </div>
+                
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"alt="Full Stack Development">
-                </div>
-            </div>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number" data-target="50">0</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="5">0</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="25">0</div>
-                    <div class="stat-label">Skills</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number" data-target="30">0</div>
-                    <div class="stat-label">UI Designs</div>
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Subiksen V S">
                 </div>
             </div>
         </div>
@@ -2002,177 +1493,70 @@ transform: translatey(-50px);
     <section id="skills">
         <div class="section-container">
             <h2 class="section-title">My Skills</h2>
-            <p style="font-weight:bolder;"class="section-subtitle">I've worked with a variety of technologies in the web development world. Here are my core competencies:</p>
+            <p class="section-subtitle">Technologies and tools I work with daily</p>
             
             <div class="skills-container">
-                <!-- Frontend Skills -->
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" alt="HTML5">
-                    <span class="skill-name">HTML5</span>
+                <div class="skill-item" style="--progress-width: 95%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png" alt="Kotlin" class="skill-icon">
+                    <h3 class="skill-name">Kotlin</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 95%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" alt="CSS3">
-                    <span class="skill-name">CSS3</span>
+                
+                <div class="skill-item" style="--progress-width: 90%">
+                    <img src="https://developer.android.com/static/images/jetpack/compose-logo.png" alt="Jetpack Compose" class="skill-icon">
+                    <h3 class="skill-name">Jetpack Compose</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 90%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon" alt="JavaScript">
-                    <span class="skill-name">JavaScript</span>
+                
+                <div class="skill-item" style="--progress-width: 85%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Android_Studio_Icon_3.6.svg" alt="Android Studio" class="skill-icon">
+                    <h3 class="skill-name">Android Studio</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 85%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React">
-                    <span class="skill-name">React</span>
+                
+                <div class="skill-item" style="--progress-width: 80%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-Firebase-Logo.png" alt="Firebase" class="skill-icon">
+                    <h3 class="skill-name">Firebase</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 90%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" class="skill-icon" alt="Tailwind CSS">
-                    <span class="skill-name">Tailwind CSS</span>
+                
+                <div class="skill-item" style="--progress-width: 85%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="MVVM" class="skill-icon">
+                    <h3 class="skill-name">MVVM Architecture</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 88%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="skill-icon" alt="Bootstrap">
-                    <span class="skill-name">Bootstrap</span>
+                
+                <div class="skill-item" style="--progress-width: 75%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Clean Architecture" class="skill-icon">
+                    <h3 class="skill-name">Clean Architecture</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 85%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
-                <!-- Spring Boot -->
-<div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" class="skill-icon" alt="Spring Boot">
-    <span class="skill-name">Spring Boot</span>
-    <div class="skill-level">
-        <div class="skill-progress" style="--progress-width: 80%"></div>
-    </div>
-</div>
-
-<!-- Git -->
-<div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" alt="Git">
-    <span class="skill-name">Git</span>
-    <div class="skill-level">
-        <div class="skill-progress" style="--progress-width: 90%"></div>
-    </div>
-</div>
-
-<!-- GitHub -->
-<div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="skill-icon" alt="GitHub">
-    <span class="skill-name">GitHub</span>
-    <div class="skill-level">
-        <div class="skill-progress" style="--progress-width: 85%"></div>
-    </div>
-</div>
-
-<!-- AWS -->
-<div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="skill-icon" alt="AWS">
-    <span class="skill-name">AWS</span>
-    <div class="skill-level">
-        <div class="skill-progress" style="--progress-width: 75%"></div>
-    </div>
-</div>
-
-<!-- Heroku -->
-<div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" class="skill-icon" alt="Heroku">
-    <span class="skill-name">Heroku</span>
-    <div class="skill-level">
-        <div class="skill-progress" style="--progress-width: 70%"></div>
-    </div>
-</div>
-
-<!-- Flask -->
-<div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="skill-icon" alt="Flask">
-    <span class="skill-name">Flask</span>
-    <div class="skill-level">
-        <div class="skill-progress" style="--progress-width: 65%"></div>
-    </div>
-</div>
-
-<!-- PHP -->
-<div class="skill-item">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="skill-icon" alt="PHP">
-    <span class="skill-name">PHP</span>
-    <div class="skill-level">
-        <div class="skill-progress" style="--progress-width: 60%"></div>
-    </div>
-</div>
-                <!-- Backend Skills -->
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js">
-                    <span class="skill-name">Node.js</span>
+                
+                <div class="skill-item" style="--progress-width: 70%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/GitHub_Logo.png" alt="Git" class="skill-icon">
+                    <h3 class="skill-name">Git & GitHub</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 85%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python">
-                    <span class="skill-name">Python</span>
+                
+                <div class="skill-item" style="--progress-width: 65%">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Coroutines" class="skill-icon">
+                    <h3 class="skill-name">Coroutines/Flow</h3>
                     <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="skill-icon" alt="Django">
-                    <span class="skill-name">Django</span>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 65%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="skill-icon" alt="MongoDB">
-                    <span class="skill-name">MongoDB</span>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon" alt="PostgreSQL">
-                    <span class="skill-name">PostgreSQL</span>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 70%"></div>
-                    </div>
-                </div>
-                <!-- UI/UX Skills -->
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="skill-icon" alt="Figma">
-                    <span class="skill-name">Figma</span>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" class="skill-icon" alt="Adobe XD">
-                    <span class="skill-name">Adobe XD</span>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" class="skill-icon" alt="Photoshop">
-                    <span class="skill-name">Photoshop</span>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg" class="skill-icon" alt="Sketch">
-                    <span class="skill-name">Sketch</span>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--progress-width: 65%"></div>
+                        <div class="skill-progress"></div>
                     </div>
                 </div>
             </div>
@@ -2180,113 +1564,97 @@ transform: translatey(-50px);
     </section>
     
     <!-- Experience Section -->
-    <section id="experience" style="background: #f9f9f9;">
+    <section id="experience">
         <div class="section-container">
-            <h2 class="section-title">Work Experience</h2>
-            <p style="font-weight:bolder;"class="section-subtitle">My professional journey and the companies I've worked with</p>
+            <h2 class="section-title">My Experience</h2>
+            <p class="section-subtitle">Professional journey and education</p>
             
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3>Academic Project: E-Commerce Platform</h3>
-                        <span class="timeline-company">University Capstone Project</span>
-                        <span class="timeline-date">2025 - Present</span>
-                        <ul>
-                            <li>Developing a full-stack e-commerce application using MERN stack as part of final year project</li>
-                            <li>Implementing user authentication, product catalog, and shopping cart functionality</li>
-                            <li>Collaborating with 3 classmates using Git for version control and Agile methodologies</li>
-                            <li>Optimizing application performance through code splitting and efficient API design</li>
-                            <li>Conducting user testing with fellow students to gather feedback and improve UX</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Web Development Bootcamp</h3>
-                        <span class="timeline-company">Online Certification Program</span>
-                        <span class="timeline-date">Summer 2024</span>
-                        <ul>
-                            <li>Completed 300+ hours of intensive training in modern web development technologies</li>
-                            <li>Built 15+ projects including a React-based task manager and Node.js REST API</li>
-                            <li>Learned responsive design principles using CSS Grid, Flexbox, and Bootstrap</li>
-                            <li>Participated in hackathons and code reviews with fellow students</li>
-                            <li>Developed a portfolio website showcasing all bootcamp projects</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Freelance Web Projects</h3>
-                        <span class="timeline-company">Personal Initiative</span>
-                        <span class="timeline-date">2023 - 2024</span>
-                        <ul>
-                            <li>Created websites for 5 local small businesses (restaurants, tutors, photographers)</li>
-                            <li>Implemented WordPress sites with custom themes and basic plugins</li>
-                            <li>Learned client communication and requirement gathering through these projects</li>
-                            <li>Optimized sites for performance and mobile responsiveness</li>
-                            <li>Provided basic training to clients on content management</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Computer Science Student</h3>
+                        <h3>Bachelor's in Computer Science</h3>
                         <span class="timeline-company">University of Technology</span>
-                        <span class="timeline-date">2022 - Present</span>
+                        <div class="timeline-date">2015 - 2019</div>
                         <ul>
-                            <li>Maintaining 8.8 GPA in core CS courses: Data Structures, Algorithms, Databases</li>
-                            <li>Completed coursework in Web Development, UI/UX Design, and Software Engineering</li>
-                            <li>Active member of Computer Science Club and Hackathon team</li>
-                            <li>Participated in coding competitions and tech workshops</li>
-                            <li>Assisted professors with research projects involving web technologies</li>
+                            <li>Graduated with honors (GPA: 3.8/4.0)</li>
+                            <li>Specialized in Mobile Application Development</li>
+                            <li>Published research on mobile UI optimization</li>
+                            <li>Lead developer for university mobile app project</li>
                         </ul>
                     </div>
                 </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Junior Android Developer</h3>
+                        <span class="timeline-company">Mobile Innovations Inc.</span>
+                        <div class="timeline-date">2019 - 2020</div>
+                        <ul>
+                            <li>Developed and maintained 5+ Android applications</li>
+                            <li>Implemented MVVM architecture in legacy codebase</li>
+                            <li>Reduced app crashes by 40% through improved error handling</li>
+                            <li>Collaborated with designers to implement custom UI components</li>
+                        </ul>
+                    </div>
+                </div>
+                
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3>Self-Taught Coding Journey</h3>
-                        <span class="timeline-company">Personal Learning</span>
-                        <span class="timeline-date">2019 - 2022</span>
+                        <h3>Android Developer</h3>
+                        <span class="timeline-company">TechSolutions Ltd.</span>
+                        <div class="timeline-date">2020 - 2022</div>
                         <ul>
-                            <li>Learned HTML, CSS, and JavaScript through online platforms (freeCodeCamp, Codecademy)</li>
-                            <li>Built personal projects including a weather app and todo application</li>
-                            <li>Contributed to open source projects to understand collaborative development</li>
-                            <li>Started tech blog documenting learning progress and project walkthroughs</li>
-                            <li>Participated in online coding challenges to improve problem-solving skills</li>
+                            <li>Led development of flagship e-commerce app with 100k+ users</li>
+                            <li>Migrated entire codebase from Java to Kotlin</li>
+                            <li>Implemented CI/CD pipeline reducing release time by 60%</li>
+                            <li>Introduced Jetpack Compose to modernize UI development</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="download-resume">
-                <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download Full Resume</a>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Senior Android Developer</h3>
+                        <span class="timeline-company">Digital Creations</span>
+                        <div class="timeline-date">2022 - Present</div>
+                        <ul>
+                            <li>Architected and developed 3 new Android apps from scratch</li>
+                            <li>Mentored junior developers in Kotlin best practices</li>
+                            <li>Implemented modular app architecture improving build times</li>
+                            <li>Integrated advanced features like AR and ML</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Education Section -->
     <section id="education">
         <div class="section-container">
             <h2 class="section-title">Education</h2>
-            <p class="section-subtitle">My academic background and continuous learning journey</p>
+            <p class="section-subtitle">My academic background and certifications</p>
             
             <div class="education-grid">
                 <div class="education-card">
-                    <h3 class="education-degree">Bachelor of Engineering in Computer Science</h3>
-                    <p class="education-institution">K.Ramakrishnan College of Technology</p>
-                    <!--<span class="education-date">2023 - 2027</span-->
-                    <p class="education-description">Focused on fundamentals of programming, algorithms, and data structures. Active participant in coding competitions and hackathons.</p>
+                    <h3 class="education-degree">Bachelor of Computer Science</h3>
+                    <p class="education-institution">University of Technology</p>
+                    <div class="education-date">2015 - 2019</div>
+                    <p class="education-description">Specialized in Mobile Application Development with coursework in data structures, algorithms, and human-computer interaction. Graduated with honors.</p>
                 </div>
+                
                 <div class="education-card">
-                    <h3 class="education-degree">UI/UX Design Specialization</h3>
-                    <p class="education-institution">Interaction Design Foundation</p>
-                    <!--span class="education-date">2031</span>-->
-                    <p class="education-description">Completed comprehensive training in user-centered design principles, interaction design, and usability testing methodologies.</p>
+                    <h3 class="education-degree">Android Developer Nanodegree</h3>
+                    <p class="education-institution">Udacity</p>
+                    <div class="education-date">2020</div>
+                    <p class="education-description">Advanced certification covering modern Android development with Kotlin, Jetpack components, and architecture patterns.</p>
                 </div>
+                
                 <div class="education-card">
-                    <h3 class="education-degree">Advanced React Development</h3>
-                    <p class="education-institution">Frontend Masters</p>
-                    <!--span class="education-date">2032</span>-->
-                    <p class="education-description">Mastered advanced React patterns, performance optimization, and state management techniques with Redux and Context API.</p>
+                    <h3 class="education-degree">Jetpack Compose Masterclass</h3>
+                    <p class="education-institution">Google Developers</p>
+                    <div class="education-date">2021</div>
+                    <p class="education-description">Intensive training on declarative UI development with Jetpack Compose, including state management and custom components.</p>
                 </div>
             </div>
         </div>
@@ -2295,297 +1663,151 @@ transform: translatey(-50px);
     <!-- Projects Section -->
     <section id="projects">
         <div class="section-container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">A selection of my recent work across different domains</p>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">A selection of my recent work</p>
             
             <div class="project-tabs">
-                <div class="project-tab active" data-filter="all">All Projects</div>
-                <div class="project-tab" data-filter="fullstack">Full Stack</div>
-                <div class="project-tab" data-filter="uiux">UI/UX Design</div>
-                <div class="project-tab" data-filter="web">Web Development</div>
-                <div class="project-tab" data-filter="mobile">Mobile Apps</div>
+                <button class="project-tab active" data-filter="all">All</button>
+                <button class="project-tab" data-filter="android">Android</button>
+                <button class="project-tab" data-filter="kotlin">Kotlin</button>
+                <button class="project-tab" data-filter="compose">Compose</button>
             </div>
             
             <div class="projects-grid">
-                <!-- Full Stack Project 1 -->
-                <div class="project-card" data-category="fullstack">
-                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="E-Commerce Platform">
+                <div class="project-card" data-category="android compose">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Finance App" class="project-img">
                     <div class="project-overlay">
+                        <h3>Finance Tracker</h3>
                         <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
-                            <span class="project-tag">Redux</span>
-                            <span class="project-tag">Stripe API</span>
+                            <span class="project-tag">Android</span>
+                            <span class="project-tag">Jetpack Compose</span>
+                            <span class="project-tag">Room DB</span>
                         </div>
-                        <p>A complete e-commerce solution with product management, cart functionality, user authentication, and payment processing using Stripe.</p>
+                        <p>Modern finance tracking app with beautiful charts and analytics built with Jetpack Compose and MVVM architecture.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-btn"><i class="fas fa-info-circle"></i> Case Study</a>
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Full Stack Project 2 -->
-                <div class="project-card" data-category="fullstack">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="Task Management">
+                <div class="project-card" data-category="android kotlin">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Recipe App" class="project-img">
                     <div class="project-overlay">
+                        <h3>Recipe Finder</h3>
                         <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">MVVM</span>
+                            <span class="project-tag">Retrofit</span>
+                        </div>
+                        <p>Recipe discovery app with advanced search filters, step-by-step cooking instructions, and meal planning features.</p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="compose">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Real Estate App" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Property Finder</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Jetpack Compose</span>
+                            <span class="project-tag">Google Maps</span>
                             <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Real-time</span>
-                            <span class="project-tag">Drag & Drop</span>
-                            <span class="project-tag">Team Collaboration</span>
                         </div>
-                        <p>Collaborative task management system with real-time updates, drag & drop interface, team features, and productivity analytics.</p>
+                        <p>Real estate app with interactive maps, property comparisons, and AR virtual tours built with Jetpack Compose.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- UI/UX Project 1 -->
-                <div class="project-card" data-category="uiux">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="Mobile App Design">
+                <div class="project-card" data-category="android kotlin">
+                    <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Fitness App" class="project-img">
                     <div class="project-overlay">
+                        <h3>Fitness Companion</h3>
                         <div class="project-tags">
-                            <span class="project-tag">Figma</span>
-                            <span class="project-tag">UI/UX</span>
-                            <span class="project-tag">Prototyping</span>
-                            <span class="project-tag">User Testing</span>
-                            <span class="project-tag">Design System</span>
-                        </div>
-                        <p>Complete UI/UX design for a fitness tracking mobile application with workout plans, nutrition tracking, and social features.</p>
-                        <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> View Prototype</a>
-                            <a href="#" class="project-btn"><i class="fab fa-behance"></i> Behance</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- UI/UX Project 2 -->
-                <div class="project-card" data-category="uiux">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="Dashboard Design">
-                    <div class="project-overlay">
-                        <div class="project-tags">
-                            <span class="project-tag">Adobe XD</span>
-                            <span class="project-tag">Data Viz</span>
-                            <span class="project-tag">Wireframing</span>
-                            <span class="project-tag">Dark Mode</span>
-                            <span class="project-tag">User Flows</span>
-                        </div>
-                        <p>Data visualization dashboard for business analytics with customizable widgets, dark mode support, and interactive charts.</p>
-                        <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> View Prototype</a>
-                            <a href="#" class="project-btn"><i class="fab fa-behance"></i> Behance</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Web Project 1 -->
-                <div class="project-card" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="Corporate Website">
-                    <div class="project-overlay">
-                        <div class="project-tags">
-                            <span class="project-tag">HTML/CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">GSAP</span>
-                            <span class="project-tag">Responsive</span>
-                            <span class="project-tag">CMS Integration</span>
-                        </div>
-                        <p>Modern responsive website for a financial services company with interactive elements, animations, and content management system.</p>
-                        <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> Visit Site</a>
-                            <a href="#" class="project-btn"><i class="fas fa-code"></i> Tech Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Web Project 2 -->
-                <div class="project-card" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="Portfolio Website">
-                    <div class="project-overlay">
-                        <div class="project-tags">
-                            <span class="project-tag">HTML5</span>
-                            <span class="project-tag">CSS3</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">GSAP</span>
-                            <span class="project-tag">Responsive</span>
-                        </div>
-                        <p>Modern portfolio website with smooth animations, responsive design, and interactive elements to showcase creative work.</p>
-                        <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> Visit Site</a>
-                            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Mobile Project 1 -->
-                <div class="project-card" data-category="mobile">
-                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="Mobile App">
-                    <div class="project-overlay">
-                        <div class="project-tags">
-                            <span class="project-tag">React Native</span>
-                            <span class="project-tag">Firebase</span>
-                            <span class="project-tag">Google Maps API</span>
-                            <span class="project-tag">Offline First</span>
-                            <span class="project-tag">UI Design</span>
-                        </div>
-                        <p>Mobile application for travelers with itinerary planning, local recommendations, and offline access to essential information.</p>
-                        <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> View Demo</a>
-                            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Mobile Project 2 -->
-                <div class="project-card" data-category="mobile">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="project-img" alt="Mobile App">
-                    <div class="project-overlay">
-                        <div class="project-tags">
-                            <span class="project-tag">Flutter</span>
-                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">Wear OS</span>
                             <span class="project-tag">Health API</span>
-                            <span class="project-tag">UI Design</span>
-                            <span class="project-tag">Animation</span>
                         </div>
-                        <p>Cross-platform fitness tracking application with workout logging, nutrition tracking, and progress visualization.</p>
+                        <p>Comprehensive fitness tracking app with Wear OS integration, workout plans, and nutrition tracking.</p>
                         <div class="project-actions">
-                            <a href="#" class="project-btn"><i class="fas fa-eye"></i> View Demo</a>
-                            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Testimonials Section -->
-    <section id="testimonials" style="background: #f9f9f9;">
-        <div class="section-container">
-            <h2 class="section-title">Client Testimonials</h2>
-            <p class="section-subtitle">What my clients and colleagues say about working with me</p>
-            
-            <div class="testimonials">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Subiksen transformed our e-commerce platform with his full-stack expertise. His attention to detail and problem-solving skills were exceptional. The project was delivered on time and exceeded our expectations, resulting in a 40% increase in conversion rates. His ability to understand our business needs and translate them into technical solutions was impressive."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="author-avatar" alt="Michael Johnson">
-                        <div class="author-info">
-                            <h4>Michael Johnson</h4>
-                            <p>CEO, Retail Solutions</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"The UI designs Subiksen created for our mobile app were stunning and intuitive. He understood our users' needs perfectly and delivered a design system that elevated our brand identity. His designs not only looked beautiful but also improved our app's usability metrics by 35%. He was always responsive to feedback and went above and beyond to ensure the final product was perfect."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="author-avatar" alt="Sarah Williams">
-                        <div class="author-info">
-                            <h4>Sarah Williams</h4>
-                            <p>Product Manager, HealthTech</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
+                <div class="project-card" data-category="compose">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Social App" class="project-img">
+                    <div class="project-overlay">
+                        <h3>ArtShare</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Jetpack Compose</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">ML Kit</span>
+                        </div>
+                        <p>Social platform for artists to share their work with image recognition and augmented reality features.</p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Working with Subiksen on our web application was a pleasure. His technical skills are top-notch, and his ability to explain complex concepts made collaboration seamless. He delivered clean, maintainable code and was always proactive in suggesting improvements. The application he built has been running flawlessly with 99.9% uptime. Highly recommended!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/75.jpg" class="author-avatar" alt="David Chen">
-                        <div class="author-info">
-                            <h4>David Chen</h4>
-                            <p>CTO, FinTech Startup</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                <div class="project-card" data-category="android kotlin">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Travel App" class="project-img">
+                    <div class="project-overlay">
+                        <h3>Travel Planner</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">Kotlin</span>
+                            <span class="project-tag">Clean Architecture</span>
+                            <span class="project-tag">Offline First</span>
                         </div>
-                    </div>
-                </div>
-
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Subiksen's design thinking approach to our project was refreshing. He didn't just create beautiful interfaces but solved real business problems through design. His user research and testing methodologies helped us uncover insights we hadn't considered. The final product exceeded our KPIs by 45% and our users love the intuitive experience."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="author-avatar" alt="Jennifer Lee">
-                        <div class="author-info">
-                            <h4>Jennifer Lee</h4>
-                            <p>Director of Product, SaaS Company</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"As a team lead, I've worked with many developers, but Subiksen stands out for his technical depth and collaborative approach. He consistently delivered high-quality code, mentored junior team members, and contributed to architectural decisions. His full-stack expertise helped us ship features faster while maintaining code quality."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/42.jpg" class="author-avatar" alt="Robert Taylor">
-                        <div class="author-info">
-                            <h4>Robert Taylor</h4>
-                            <p>Engineering Manager, Tech Corp</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Subiksen's ability to bridge design and development is rare. He understands design constraints and technical limitations, which made our collaboration incredibly efficient. The websites he built for our agency clients consistently receive praise for both their aesthetics and performance. He's become our go-to developer for complex projects."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/33.jpg" class="author-avatar" alt="Emily Wilson">
-                        <div class="author-info">
-                            <h4>Emily Wilson</h4>
-                            <p>Creative Director, Digital Agency</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                        <p>Travel planning app with itinerary management, offline maps, and local recommendations.</p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -2597,465 +1819,280 @@ transform: translatey(-50px);
     <section id="contact">
         <div class="section-container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!</p>
+            <p class="section-subtitle">Have a project in mind or want to discuss opportunities? I'd love to hear from you!</p>
             
-            <div class="contact-form-container">
-                <div class="contact-info-card">
-                    <h3>Contact Information</h3>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <a href="tel:+917904600551">+91 7904600551</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:subiksen.v.s@gmail.com">subiksen.v.s@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Chennai, Tamil Nadu, India</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin-in"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com/in/subiksen-v-s" target="_blank">linkedin.com/in/subiksen-v-s</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/subiksen2006" target="_blank">github.com/subiksen2006</a>
-                            </div>
-                        </div>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" title="Dribbble"><i class="fab fa-dribbble"></i></a>
-                        <a href="#" class="social-link" title="Behance"><i class="fab fa-behance"></i></a>
-                        <a href="#" class="social-link" title="Codepen"><i class="fab fa-codepen"></i></a>
-                    </div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-info">subiksen@example.com</p>
+                    <a href="mailto:subiksen@example.com" class="contact-link">Send Message</a>
                 </div>
                 
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder=" " required>
-                            <label for="name" class="form-label">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder=" " required>
-                            <label for="email" class="form-label">Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="subject" placeholder=" ">
-                            <label for="subject" class="form-label">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="message" placeholder=" " required></textarea>
-                            <label for="message" class="form-label">Your Message</label>
-                        </div>
-                        <button type="submit" class="submit-btn">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Phone</h3>
+                    <p class="contact-info">+1 (555) 123-4567</p>
+                    <a href="tel:+15551234567" class="contact-link">Call Me</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="contact-title">LinkedIn</h3>
+                    <p class="contact-info">linkedin.com/in/subiksen</p>
+                    <a href="https://linkedin.com" target="_blank" class="contact-link">Connect</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="contact-title">GitHub</h3>
+                    <p class="contact-info">github.com/subiksen</p>
+                    <a href="https://github.com" target="_blank" class="contact-link">View Profile</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Back to Top Button -->
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
     
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <a href="#" class="footer-logo">
-                <i class="fas fa-code"></i> Subiksen
-            </a>
-            <p class="footer-tagline">Full Stack Developer & UI/UX Designer creating digital experiences that matter</p>
-            
-            <ul class="footer-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            
-            <div class="footer-social">
-                <a href="#" class="footer-social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="footer-social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="footer-social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" class="footer-social-link" title="Dribbble"><i class="fab fa-dribbble"></i></a>
-                <a href="#" class="footer-social-link" title="Behance"><i class="fab fa-behance"></i></a>
-            </div>
-            
-            <p class="copyright">© 2025 Subiksen V S. All rights reserved.</p>
+        <div class="footer-logo">Subiksen V S</div>
+        
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
+        
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+        </div>
+        
+        <p class="copyright">© 2023 Subiksen V S. All rights reserved.</p>
     </footer>
     
     <script>
-        // Add this to your existing JavaScript code (either in the <script> tag or a separate .js file)
-
-function setupDownloadButtons() {
-    // Google Drive link for your resume
-    const resumeLink = 'https://drive.usercontent.google.com/u/0/uc?id=1-g7TRNAmFhwgYdPCcT5zXFJCaDgjv0sI&export=download';
-    
-    // Get all download buttons
-    const downloadButtons = document.querySelectorAll('.btn-outline, .download-resume .btn-primary');
-    
-    // Add click event to each button
-    downloadButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default anchor behavior
-            window.open(resumeLink, '_blank'); // Open in new tab
-        });
-    });
-}
-
-// Add this to your window load event listener
-window.addEventListener('load', () => {
-    // ... your existing initialization code ...
-    setupDownloadButtons();
-});
         // Create floating particles
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = window.innerWidth < 768 ? 20 : 40;
+        const particlesContainer = document.getElementById('particles');
+        const particleCount = 30;
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
             
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // Random size between 5px and 20px
-                const size = Math.random() * 15 + 5;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                
-                // Random position
-                particle.style.left = `${Math.random() * 100}vw`;
-                particle.style.bottom = `-${size}px`;
-                
-                // Random animation duration between 10s and 30s
-                const duration = Math.random() * 20 + 10;
-                particle.style.animationDuration = `${duration}s`;
-                
-                // Random delay
-                particle.style.animationDelay = `${Math.random() * 10}s`;
-                
-                // Random opacity
-                particle.style.opacity = Math.random() * 0.6 + 0.1;
-                
-                // Random blur
-                particle.style.filter = `blur(${Math.random() * 2}px)`;
-                
-                particlesContainer.appendChild(particle);
+            // Random size between 5px and 15px
+            const size = Math.random() * 10 + 5;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            
+            // Random position
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.top = `${Math.random() * 100}vh`;
+            
+            // Random animation duration between 10s and 20s
+            const duration = Math.random() * 10 + 10;
+            particle.style.animationDuration = `${duration}s`;
+            
+            // Random delay
+            particle.style.animationDelay = `${Math.random() * 5}s`;
+            
+            particlesContainer.appendChild(particle);
+        }
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
-        }
-        
-        // Counter animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.stat-number');
-            const speed = 200;
-            
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
-                const increment = target / speed;
-                
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + increment);
-                    setTimeout(animateCounters, 1);
-                } else {
-                    counter.innerText = target + '+';
-                }
-            });
-        }
-        
-        // Project filtering
-        function setupProjectFilter() {
-            const tabs = document.querySelectorAll('.project-tab');
-            const projects = document.querySelectorAll('.project-card');
-            
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    // Update active tab
-                    tabs.forEach(t => t.classList.remove('active'));
-                    tab.classList.add('active');
-                    
-                    // Filter projects
-                    const filter = tab.getAttribute('data-filter');
-                    
-                    projects.forEach(project => {
-                        if (filter === 'all' || project.getAttribute('data-category') === filter) {
-                            project.style.display = 'block';
-                            setTimeout(() => {
-                                project.style.opacity = '1';
-                                project.style.transform = 'translateY(0)';
-                            }, 50);
-                        } else {
-                            project.style.opacity = '0';
-                            project.style.transform = 'translateY(20px)';
-                            setTimeout(() => {
-                                project.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
-        }
+        });
         
         // Mobile menu toggle
-        function setupMobileMenu() {
-            const hamburger = document.getElementById('hamburger');
-            const navLinks = document.getElementById('navLinks');
-            
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                hamburger.innerHTML = navLinks.classList.contains('active') ? 
-                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
             });
-            
-            // Close menu when clicking a link
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('active');
-                    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-                });
-            });
-        }
-
-        // Navbar scroll effect
-        function setupNavbarScroll() {
-            const navbar = document.getElementById('navbar');
-            
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 100) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
-        }
-
-        // Back to top button
-        function setupBackToTop() {
-            const backToTop = document.getElementById('backToTop');
-            
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                    backToTop.classList.add('active');
-                } else {
-                    backToTop.classList.remove('active');
-                }
-            });
-
-            backToTop.addEventListener('click', (e) => {
+        });
+        
+        // Sidebar toggle
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+        
+        // Scroll to section with offset for fixed navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navbarHeight = document.getElementById('navbar').offsetHeight;
+                const targetPosition = targetElement.offsetTop - navbarHeight;
+                
                 window.scrollTo({
-                    top: 0,
+                    top: targetPosition,
                     behavior: 'smooth'
                 });
             });
-        }
-
-        // Smooth scrolling for anchor links
-        function setupSmoothScrolling() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        }
-
-        // Scroll to section and highlight active nav link
-        function setupScrollSpy() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-
-            window.addEventListener('scroll', () => {
-                let current = '';
-                
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    
-                    if (window.scrollY >= sectionTop - 150 && window.scrollY < sectionTop + sectionHeight - 150) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${current}`) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-        }
-        // Animate sections on scroll
-        function animateSectionsOnScroll() {
-            const sections = document.querySelectorAll('section');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        }
-
-        // Form submission
-        function setupForm() {
-            const contactForm = document.getElementById('contactForm');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Get form values
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const subject = document.getElementById('subject').value;
-                    const message = document.getElementById('message').value;
-                    
-                    // Here you would typically send the form data to a server
-                    // For this example, we'll just show an alert
-                    alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon at ${email}.`);
-                    
-                    // Reset form
-                    contactForm.reset();
-                });
-            }
-        }
-
-        // Typing animation
-        function setupTypingAnimation() {
-            const textElement = document.getElementById('typingText');
-            const texts = [
-                "Full Stack Developer",
-                "UI/UX Designer",
-                "Web Developer"
-            ];
-            let textIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-            let typingSpeed = 100;
-
-            function type() {
-                const currentText = texts[textIndex];
-                
-                if (isDeleting) {
-                    textElement.textContent = currentText.substring(0, charIndex - 1);
-                    charIndex--;
-                    typingSpeed = 50;
-                } else {
-                    textElement.textContent = currentText.substring(0, charIndex + 1);
-                    charIndex++;
-                    typingSpeed = 100;
-                }
-
-                if (!isDeleting && charIndex === currentText.length) {
-                    isDeleting = true;
-                    typingSpeed = 1500; // Pause at end of word
-                } else if (isDeleting && charIndex === 0) {
-                    isDeleting = false;
-                    textIndex = (textIndex + 1) % texts.length;
-                    typingSpeed = 500; // Pause before typing next word
-                }
-
-                setTimeout(type, typingSpeed);
-            }
-
-            // Start typing animation
-            setTimeout(type, 1000);
-        }
-
-        // Sidebar toggle
-        function setupSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            const sidebarToggle = document.getElementById('sidebarToggle');
-            
-            sidebarToggle.addEventListener('click', () => {
-                sidebar.classList.toggle('open');
-            });
-        }
-
-        // Scroll down arrow functionality
-        function setupScrollDown() {
-            const scrollDown = document.getElementById('scrollDown');
-            
-            scrollDown.addEventListener('click', () => {
-                const aboutSection = document.getElementById('about');
-                if (aboutSection) {
-                    window.scrollTo({
-                        top: aboutSection.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        }
-
-        // Initialize all functions when page loads
-        window.addEventListener('load', () => {
-            createParticles();
-            setTimeout(animateCounters, 1000);
-            setupProjectFilter();
-            setupMobileMenu();
-            setupNavbarScroll();
-            setupBackToTop();
-            setupSmoothScrolling();
-            setupScrollSpy();
-            animateSectionsOnScroll();
-            setupForm();
-            setupTypingAnimation();
-            setupSidebar();
-            setupScrollDown();
         });
+        
+        // Set active nav link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.nav-links a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 300) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === `#${current}`) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        
+        // Animate skills progress bars on scroll
+        const skillItems = document.querySelectorAll('.skill-item');
+        
+        function animateSkills() {
+            skillItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                const isVisible = (rect.top <= window.innerHeight * 0.8) && 
+                                 (rect.bottom >= window.innerHeight * 0.2);
+                
+                if (isVisible) {
+                    const progressBar = item.querySelector('.skill-progress');
+                    const width = item.style.getPropertyValue('--progress-width');
+                    progressBar.style.width = width;
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateSkills);
+        window.addEventListener('load', animateSkills);
+        
+        // Project filtering
+        const projectTabs = document.querySelectorAll('.project-tab');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        projectTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Update active tab
+                projectTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                const filter = tab.getAttribute('data-filter');
+
+
+
+                
+        // Project filtering continued
+        projectTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Update active tab
+                projectTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                const filter = tab.getAttribute('data-filter');
+                
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Animate sections on scroll
+        const animateOnScroll = () => {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const isVisible = (rect.top <= window.innerHeight * 0.8) && 
+                                 (rect.bottom >= window.innerHeight * 0.2);
+                
+                if (isVisible) {
+                    section.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Typing animation
+        const typingText = document.querySelector('.typing-text');
+        const phrases = ["Android Developer", "Kotlin Expert", "Jetpack Compose", "Mobile Architect"];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        const type = () => {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                setTimeout(type, 1500);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                setTimeout(type, 500);
+            } else {
+                const speed = isDeleting ? 50 : 150;
+                setTimeout(type, speed);
+            }
+        };
+        
+        // Start typing animation
+        setTimeout(type, 1000);
     </script>
 </body>
 </html>
